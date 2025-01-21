@@ -1,0 +1,22 @@
+.foot{
+    justify-content: space-between;
+    align-items:center ;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    border-top: solid 1px gray;
+
+    div, p {
+        margin: 0 20px;
+        font-weight: 500;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+        font-weight: 700;
+    }
+}
+
+
