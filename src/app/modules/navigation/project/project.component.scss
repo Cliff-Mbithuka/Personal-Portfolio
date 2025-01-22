@@ -10,8 +10,8 @@ h1 {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; /* Space between grid items */
-  //   padding: 2rem;
+  gap: 2rem;
+  
   max-width: 1200px;
   margin: 0 auto 5em;
 }
@@ -19,7 +19,6 @@ h1 {
 .project {
   position: relative;
   border: 1px solid #ccc;
-  // padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -37,7 +36,7 @@ h1 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  pointer-events: none; /* Prevent blocking other interactions */
+  pointer-events: none; 
 }
 
 .project img {
