@@ -5,5 +5,9 @@ export const routes: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: 'about',
+        loadChildren: () => import('./modules/navigation/navigation.module').then(m => m.NavigationModule)
     }
 ];

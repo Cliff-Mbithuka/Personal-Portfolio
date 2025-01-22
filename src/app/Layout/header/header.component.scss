@@ -1,5 +1,6 @@
 .wrapper {
-  width: 100%;
+    width: 90%;
+    margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,5 +30,17 @@
     color: black;
     margin: 0 10px;
     font-weight: 700;
+
+    &.active {
+      color: aquamarine;
+    }
+  }
+
+  .toogle {
+    background-color: gray;
+
+    i{
+        font-size: 20px;
+    }
   }
 }

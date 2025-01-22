@@ -1,10 +1,20 @@
 <div class="wrapper">
-  <div class="logo"><a href=""><img src="./assets/images/cliff.jpeg" alt="logo" /></a></div>
-
-  <div class="nav">
-    <a href=""> About </a><a href=""> Project </a><a href="">Speaking</a
-    ><a href="">Uses</a>
+  <div class="logo">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <img src="./assets/images/cliff.jpeg" alt="logo"
+    /></a>
   </div>
 
-  <div> <div class="logo"><img src="./assets/images/cliff.jpeg" alt="logo" /></div></div>
+  <div class="nav">
+    <a routerLink="/about" routerLinkActive="active"> About </a>
+    <a href=""> Project </a>
+    <a href="">Skills</a>
+    <a href="">Experience</a>
+  </div>
+
+  <div class="toogle"><i class="pi pi-sun"></i></div>
 </div>
