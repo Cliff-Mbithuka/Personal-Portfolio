@@ -31,16 +31,16 @@ background-color: rgba(24,24,27,255);
 
 @media (max-width: 768px) {
     .foot {
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center; /* Center items */
-      padding: 15px 10px; /* Add more padding for touch devices */
+      flex-direction: column; 
+      align-items: center;
+      padding: 15px 10px; 
     }
   
     .foot div, .foot p {
-      margin: 5px 0; /* Reduce margin for compact layout */
+      margin: 5px 0; 
     }
   
     .foot a {
-      font-size: 14px; /* Reduce font size for small screens */
+      font-size: 14px;
     }
   }

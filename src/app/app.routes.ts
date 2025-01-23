@@ -25,4 +25,9 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./modules/stack/stack.module').then((m) => m.StackModule),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./modules/contact/contact.module').then((m) => m.ContactModule),
+  },
 ];
