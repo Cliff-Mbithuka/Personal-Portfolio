@@ -16,7 +16,7 @@ h1{
  
     i:hover {
         cursor: pointer;
-        color: blue;
+        color: aquamarine;
         transform: scale(1.5); 
       }
     
@@ -30,32 +30,36 @@ h1{
     }
   }
 
-.photos {
-    display: flex;
-    gap: 5px; 
-    justify-content: center; 
-    align-items: center;  
-    border-radius: 5px; 
+  .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
     max-width: 1400px; 
-    margin-top: 5em; 
+    margin-top: 5em;
   }
   
   .photo {
-    flex: 1; 
-    max-width: 350px;
-    height: 350px; 
+    max-width: 100%;
+    height: 350px;
     overflow: hidden;
-    border-radius: 20px; }
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+  }
   
   .photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    transition: transform 0.4s ease-in-out;
+    object-fit: cover;
+   
   }
   
-  .photo img:hover {
+  .photo:hover {
     cursor: pointer;
     transform: scale(1.05);
   }
+  
+  
   

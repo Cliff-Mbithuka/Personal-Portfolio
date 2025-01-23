@@ -6,4 +6,12 @@
     flex-grow: 1;
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgba(24,24,27,255);
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+      width: 95%; /* Slightly increase width for smaller screens */
+      padding: 15px; /* Reduce padding to fit smaller viewports */
+    }
+  }

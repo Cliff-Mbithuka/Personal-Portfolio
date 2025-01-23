@@ -5,6 +5,7 @@ h1 {
   
   .more {
     margin: 1em 0 4em 0;
+    font-size: 1.2em;
   }
 
  .right, .left { 
@@ -44,4 +45,11 @@ h1 {
   .specific p, h2{
     margin-bottom: 5px;
     font-size: 16px;
+  }
+  .specific p:first-of-type {
+    color: gray; 
+    border-left: solid 2px gray;
+    padding-left: 10px;
+    margin-bottom: 7px;
+    font-weight: bold; /* Example: Make the text bold */
   }

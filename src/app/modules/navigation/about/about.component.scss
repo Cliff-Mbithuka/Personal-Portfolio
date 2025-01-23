@@ -1,7 +1,7 @@
 .wrapper {
     display: flex; 
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     margin: 4em 0 5em 0;
   }
   
@@ -49,10 +49,10 @@
 
    .image{
     position: relative;
-    max-width: 600px; /* Adjust size as needed */
+    max-width: 450px; /* Adjust size as needed */
     border-radius: 20px;
     overflow: hidden; /* Ensures the rounded corners are applied */
-    margin: 0 auto; 
+    // margin: 0 auto; 
   }
   .wrapper img {
     display: block;
@@ -69,4 +69,40 @@
   a{
     text-decoration: none;
     color: #000;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      // gap: 10px; /* Reduce gap for small screens */
+      margin: 2em 0 2em 0;
+    }
+  
+    h1 {
+      font-size: 2.5em; /* Reduce heading size */
+    }
+  
+    .wrapper > .left,
+    .wrapper > .right {
+      min-width: 100%; /* Full-width layout */
+    }
+  
+    .icons {
+      margin-top: 2em;
+    }
+  
+    .image {
+      max-width: 100%; /* Ensure the image is responsive */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pi {
+      flex-direction: column; /* Stack items vertically */
+      gap: 10px;
+    }
+  
+    h1 {
+      font-size: 2em; /* Further reduce heading size */
+    }
   }
