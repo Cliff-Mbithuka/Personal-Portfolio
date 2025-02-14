@@ -11,5 +11,6 @@ import { FooterComponent } from './Layout/footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+ 
   title = 'Personal-Portfolio';
 }

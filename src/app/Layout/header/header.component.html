@@ -1,5 +1,31 @@
 <div class="wrapper">
   <div class="logo">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <img src="./assets/images/cliff.jpeg" alt="logo" />
+    </a>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" (click)="toggleNav()">
+    <i class="pi pi-bars" *ngIf="!isNavOpen"></i>
+    <i class="pi pi-times" *ngIf="isNavOpen"></i>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav" [ngClass]="{ 'nav-open': isNavOpen }">
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/project" routerLinkActive="active">Project</a>
+    <a routerLink="/stack" routerLinkActive="active">Stack</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </div>
+
+
+</div>
+
+
+
+<!-- <div class="wrapper">
+  <div class="logo">
     <a
       routerLink="/"
       routerLinkActive="active"
@@ -17,4 +43,4 @@
   </div>
 
   <div class="toogle"><i class="pi pi-sun"></i></div>
-</div>
+</div> -->
