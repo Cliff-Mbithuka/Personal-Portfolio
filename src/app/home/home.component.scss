@@ -63,4 +63,45 @@ h1{
   }
   
   
-  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5em;
+      margin-top: 1em;
+  }
+  .icons {
+      gap: 15px;
+  }
+  .icons i {
+      font-size: 18px;
+  }
+  .photos {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 3em;
+      margin-bottom: 3em;
+  }
+  .photo {
+      height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2em;
+      margin-top: 0.5em;
+  }
+  .icons {
+      gap: 10px;
+  }
+  .icons i {
+      font-size: 16px;
+  }
+  .photos {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      margin-top: 2em;
+      margin-bottom: 2em;
+  }
+  .photo {
+      height: 200px;
+  }
+}

@@ -65,3 +65,17 @@ i{
     margin: 0;  
     display: inline; 
 }
+@media (max-width: 760px) {
+    .top {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .icon-text {
+      justify-content: center;
+    }
+
+    .right{
+        margin-bottom: 1em;
+    }
+  }

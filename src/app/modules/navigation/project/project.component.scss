@@ -71,3 +71,28 @@ span {
   margin-left: 10px;
   
 }
+ /* Responsive Design */
+ @media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .more {
+    font-size: 1em;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .more {
+    font-size: 0.95em;
+  }
+}
