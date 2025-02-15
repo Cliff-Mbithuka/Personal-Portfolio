@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {Router, RouterModule } from '@angular/router';
 import { NgClass, NgIf } from '@angular/common';
 
 @Component({
@@ -12,7 +12,13 @@ import { NgClass, NgIf } from '@angular/common';
 export class HeaderComponent {
   isNavOpen = false; // Initial state: nav is closed
 
+  constructor(private router: Router) {}
+
   toggleNav() {
     this.isNavOpen = !this.isNavOpen;
+  }
+
+  closeNav() {
+    this.isNavOpen = false; // Close the menu when a link is clicked
   }
 }
