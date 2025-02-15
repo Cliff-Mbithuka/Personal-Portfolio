@@ -3,10 +3,10 @@ h1{
     margin: 1.5em 0 0.5em 0;
 }
 .icons{
-    display: flex;
-    margin-top: 25px;
-    gap: 20px;
-    animation: bounce 2s ease-in-out infinite;
+  display: flex;
+     margin-top: 25px;
+     gap: 20px;
+     animation: bounce 2s ease-in-out infinite;
 
     i{
        margin-left: 0; 
@@ -20,6 +20,13 @@ h1{
         transform: scale(1.5); 
       }
     
+}
+.icons a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps original icon color */
+}
+.icons a:not(:first-child) {
+  margin-left: 15px; /* Add space between icons except for the first one */
 }
 @keyframes bounce {
     0%, 100% {
@@ -72,6 +79,7 @@ h1{
   .icons {
       gap: 15px;
   }
+
   .icons i {
       font-size: 18px;
   }
